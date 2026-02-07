@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-white text-gray-900;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Carrot branding font */
+h1, h2, h3, h4, .carrot-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+}
+
+/* Logo transparency and effects */
+img[alt*="Carrot"] {
+  background: transparent !important;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.3));
+  transition: all 0.3s ease;
+}
+
+img[alt*="Carrot"]:hover {
+  filter: drop-shadow(0 0 12px rgba(249, 115, 22, 0.5));
+  transform: scale(1.05);
+}
